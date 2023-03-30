@@ -1,0 +1,26 @@
+{
+    "name": "ExcaliHub",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "description": "This extension will integrate github with Excalidraw to provide version based storage to drawings",
+    "action": {
+        "default_icon": "icon/icon128.png"
+    },
+    "icons": {
+        "16": "icon/icon16.png",
+        "32": "icon/icon32.png",
+        "48": "icon/icon48.png",
+        "128": "icon/icon128.png"
+    },
+    "permissions": [
+        "activeTab",
+        "scripting"
+      ],
+      // this will load the new tab with our html
+    //   "chrome_url_overrides": {
+    //     "newtab": "home.html"
+    //   },
+    "background": {
+        "service_worker": "background.js"
+    }
+}
